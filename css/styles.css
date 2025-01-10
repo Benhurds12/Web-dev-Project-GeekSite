@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-black: #000;
+  /* Define a cor preta como uma variável */
+  --color-white: #fff;
+  /* Define a cor branca como uma variável */
+  --color-link: #7f7f7f;
+  /* Define uma cor para os links como uma variável */
+  --color-link-hover: #e8e5e4;
+  /* Define a cor dos links ao passar o mouse como uma variável */
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+  --tamanho-da-fonte:  1.2rem;
+  --tamanho-da-fonte-alt: 1rem;
+  /*--color-background: rgb(187, 15, 187);*/
+  --color-background: var(--color-white);
+
+  scroll-behavior: smooth;
+  }  
+  * {
+    background-color: var(--color-background);
+    box-sizing: border-box; /* Adiciona box-sizing para todos os elementos */
+  }
+
+  body {
+    max-width: 1440px;
+    margin: auto;
+    font-size: var(--tamanho-da-fonte);
+    font-family: var(--fonte-secundaria); /* Aplica a fonte secundária ao corpo */
+    color: var(--color-black); /* Define a cor do texto padrão */
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 48px;
+    font-family: var(--fonte-primaria); /* Aplica a fonte primária ao cabeçalho */
+    color: var(--color-black); /* Define a cor do texto do cabeçalho */
+
+  }
+  .nav-container {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center; /* Alinhamento vertical da logo e texto */
+    
+}
+
+.nav-logo img {
+    margin-right: 10px; /* Espaçamento entre a logo e o texto */
+}
+
+.nav-busca {
+    flex-grow: 1; /* Permite que a barra de busca ocupe espaço restante */
+    display: flex;
+    justify-content: space-between; /* Centraliza a barra de busca */
+    align-content: center;
+    margin: 100px;
+ 
+}
+
+.busca__barra {
+  color: var(--color-black);
+    width: 85%; /* Largura da barra de busca */
+    padding: 8px 24px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda da barra */
+    border-radius: 2px; /* Cantos arredondados */
+    background-color: var(--color-white);
+}
+
+.nav-login {
+    margin-left: 20px; /* Espaçamento à esquerda do botão de login */
+    display: flex;
+    align-items: center; 
+}
+
+.nav-login button {
+    padding: 8px 16px; /* Espaçamento interno do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 4px; /* Cantos arredondados */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer; /* Cursor pointer para indicar clicável */
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-login button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px 10px;
+  }
+
+
+  .container-gallery {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 590px;
+    background-image: var(--background-general);
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px;
+  }
+  
+  .featured-product {
+    text-align: center;
+    margin: 10px 0; /* Espaçamento vertical */
+}
+
+.featured-link {
+    display: inline-block; /* Para garantir que a imagem seja um link clicável */
+}
+
+.featured-image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Cantos arredondados para a imagem */
+    transition: transform 0.3s; /* Efeito de transformação ao passar o mouse */
+}
+
+.featured-image:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+  .container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    height: 57vh;
+    overflow-y: auto;
+    padding: 20px 15px;
+  }
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product {
+  font-size: var(--tamanho-da-fonte-alt); /* Aplica o tamanho da fonte definido */
+  font-family: var(--fonte-secundaria); /* Aplica a fonte secundária aos produtos */
+  background-color: var(--color-background); /* Fundo dos produtos */
+  border-radius: 10px;
+  padding: 10px;
+  
+  }
+
+  .product:hover {
+    transform: scale(1.1); 
+}
+
+.product img {
+  border: 2px solid #007bff; /* Borda azul */
+  border-radius: 4px; /* Cantos arredondados (opcional) */
+  max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+  /*height: auto;  Mantém a proporção da imagem */
+}
+
+  .see-more {
+    display: block;
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+.see-more-container {
+
+    text-align: right;
+    margin: 10px 20px 20px 0;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer-logo img{
+  margin-right: 10px;
+  width: 64px;
+  height: 64px;
+}
+.social{
+  margin-bottom: 10px;
+}
+.social ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social li{
+  margin-right: 12px;
+}
+.footer__links_logo{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.footer__links_logo img {
+  width: 2rem; /* Largura desejada */
+  height: 2rem; /* Altura desejada */
+  margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+}
+
+@media (max-width: 768px) {
+  .nav-busca {
+    flex-direction: column; /* Alinha verticalmente em telas pequenas */
+    align-items: stretch; /* Estica a barra de busca */
+  }
+
+  .busca__barra {
+    width: 100%; /* Ocupa toda a largura */
+    margin: 8px 0; /* Margem vertical */
+  }
+
+  .container-products {
+    flex-direction: column; /* Alinha os produtos verticalmente em telas pequenas */
+  }
+  .product {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
