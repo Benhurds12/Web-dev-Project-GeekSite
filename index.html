@@ -1,140 +1,50 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Ben Geek</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/reset-box.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src='main.js'></script>
-</head>
-<body>
-    <header>
-        <nav class="nav-container">
-            <div class="nav-logo">
-                <img src="https://static.cdnlogo.com/logos/b/58/ben.svg" alt="logo do site" width="128" height="64">
-                <span>Ben Geek</span> <!-- Nome do site -->
-            </div>
-            <div class="nav-busca">
-                <img src="./assets/lupa.png" alt="lupa de busca" width="24" height="24">
-                <input type="text" class="busca__barra" placeholder="O que deseja encontrar?">
-            </div>
-            <div class="nav-login">
-                <button data-login-button>Login</button>
-                <img src="./assets/user-interface.png" alt="icone user" width="24" height="24">
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BenGeek</title>
+    <link rel="stylesheet" href="./css/reset-box.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="header--inner--content">
+        <h1 class="logo">Ben<span>Geek</span></h1>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Camisetas</a></li>
+            <li><a href="#">Acessorios</a></li>
+          </ul>
         </nav>
-    </header>
-
-    <main>
-        <section class="container-gallery">
-            <h2>Nossos Produtos</h2>
-            <section class="featured-product">
-                <a href="URL_DO_PRODUTO" class="featured-link">
-                    <img src="assets/boxanime1.jpg" alt="Descrição do Produto em Destaque" class="featured-image" width="600" height="400">
-                </a>
-            </section>
-            
-            <h2>Filmes e Séries</h2>
-            <a class="see-more" href="#">Ver mais</a>
-            <div class="container-products">
-                <div class="product">
-                    <h3>Caneca HP 9 3/4</h3>
-                    <img src="https://m.media-amazon.com/images/I/51llID5QzwL._AC_SX679_.jpg" alt="Filme 1" width="200" height="200" >
-                    <p>Preço: R$ 39,99</p>
-                </div>
-                <div class="product">
-                    <h3>Caneca BB8</h3>
-                    <img src="https://m.media-amazon.com/images/I/41dAgtmOjRL._AC_.jpg" alt="Filme 2" width="200" height="200">
-                    <p>Preço: R$ 34,99</p>
-                </div>
-                <div class="product">
-                    <h3>Caneca Baby Yoda</h3>
-                    <img src="https://m.media-amazon.com/images/I/61KVUJIt-oL._AC_SX679_.jpg" alt="Filme 3" width="200" height="200">
-                    <p>Preço: R$ 59,99</p>
-                </div>
-                <div class="product">
-                    <h3>Caneca R2D2</h3>
-                    <img src="https://m.media-amazon.com/images/I/41MIxdiEcDL._AC_.jpg" alt="Filme 4" width="200" height="200">
-                    <p>Preço: R$ 32,99</p>
-                </div>
-            </div>
-            
-    
-            <h2>Games</h2>
-            <a class="see-more" href="#">Ver mais</a>
-            <div class="container-products">
-                <div class="product">
-                    <h3>Camisa Old Gamer</h3>
-                    <img src="https://cdn.dooca.store/292/products/vusmzirncpiamopyrfcip2onc3xtqcuomvog_620x620+fill_ffffff.jpg?v=1701457307" alt="Game 1" width="200" height="200">
-                    <p>Preço: R$ 199,99</p>
-                </div>
-                <div class="product">
-                    <h3>Camisa XP > Dormir</h3>
-                    <img src="https://cdn.dooca.store/292/products/7ckcldec6ioznzelks1wy8qw7hyiffjngznj_620x620+fill_ffffff.jpg?v=1680544108" alt="Game 2" width="200" height="200">
-                    <p>Preço: R$ 149,99</p>
-                </div>
-                <div class="product">
-                    <h3>Camisa Eat Sleep Game</h3>
-                    <img src="https://cdn.dooca.store/292/products/8vbi8f3npkddzue5nkoqpxelgbkkphtmbpj1_620x620+fill_ffffff.jpg?v=1672751694" alt="Game 3" width="200" height="200">
-                    <p>Preço: R$ 99,99</p>
-                </div>
-                <div class="product">
-                    <h3>Camisa Consoles</h3>
-                    <img src="https://cdn.dooca.store/292/products/camiseta-joysticks-controles_620x620+fill_ffffff.jpg?v=1723478193" alt="Game 4" width="200" height="200">
-                    <p>Preço: R$ 79,99</p>
-                </div>
-            </div>
-            
-    
-            <h2>Diversos</h2>
-            
-            <a class="see-more" href="#">Ver mais</a>
-            <div class="container-products">
-                <div class="product">
-                    <h3>Eco Bag Panda 1</h3>
-                    <img src="https://cdn.dooca.store/292/products/wtqmguk4s6hiyl5mqzoihdbvvzaxlcjxs4cj_495x495+fill_ffffff+crop_center.jpg?v=1733322845" alt="Produto Diverso 1" width="200" height="200">
-                    <p>Preço: R$ 29,99</p>
-                </div>
-                <div class="product">
-                    <h3>Camisa error404</h3>
-                    <img src="https://cdn.dooca.store/292/products/gfjl43vlesvkzqofbgxqdbuc5tlfjq4ds22s_620x620+fill_ffffff.jpg?v=1638809789" alt="Produto Diverso 2" width="200" height="200">
-                    <p>Preço: R$ 39,99</p>
-                </div>
-                <div class="product">
-                    <h3>Camiseta Miyamoto</h3>
-                    <img src="https://cdn.dooca.store/292/products/qa3wg0azixapp2rj2mafdwqzfqy7yhvizqya_620x620+fill_ffffff.jpg?v=1733324808" alt="Produto Diverso 3" width="200" height="200">
-                    <p>Preço: R$ 49,99</p>
-                </div>
-                <div class="product">
-                    <h3>Kit 7 Dados RPG de Mesa</h3>
-                    <img src="https://m.media-amazon.com/images/I/714C43HG+7L._AC_SX522_.jpg" alt="Produto Diverso 4" width="200" height="200">
-                    <p>Preço: R$ 59,99</p>
-                </div>
-            </div>
-            
-        </section>
-    </main>
-
-    <footer class="footer">
-            <div class="footer-logo">
-                <img src="https://static.cdnlogo.com/logos/b/58/ben.svg" alt="logo do site" width="128" height="64">
-                <span>Ben Geek</span> <!-- Nome do site -->
-            <div class="social">
-                <ul>
-                    <li><a class="footer__links_logo" href="https://github.com/Benhurds12" aria-label="GitHub">
-                        <img src="./assets/github.png" alt="Ícone do GitHub"></a></li>
-                    <li><a class="footer__links_logo" href="https://www.linkedin.com/in/benhurds/" aria-label="LinkedIn">
-                        <img src="./assets/linkedin.png" alt="Ícone do LinkedIn"></a></li>
-                    <li><a class="footer__links_logo" href="https://www.instagram.com/benhurds/" aria-label="Instagram">
-                        <img src="./assets/instagram.png" alt="Ícone do Instagram">           
-                </ul>
-            </div>
+        <div class="nav-icon-container">
+          <img src="./assets/cart.png" alt="Carrinho de compras" />
+          <img src="./assets/menu.png" class="menu--button"/>
         </div>
-        <p> Desenvolvido por Benhurds</p>
-    </footer>
-    
-</body>
+      </div>
+    </div>
+    <header>
+      <div class="header--inner--content">
+        <div class="header--bottom--side">
+          <div class="header--bottom--side--left">
+            <h2>Um novo combo de surpresas diferenciadas!</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tristique, nunc nec ultricies lacinia, nunc odio ultricies
+              sapien, nec tincidunt nunc nunc nec nunc. Sed tristique, nunc nec
+              ultricies lacinia, nunc odio ultricies sapien, nec tincidunt nunc
+              nunc nec nunc.
+            </p>
+            <button>Comprar agora</button>
+          </div>
+          <div class="header--bottom--side--right">
+            <img src="./assets/caixamisteriosa1.png" alt="BOX" />
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

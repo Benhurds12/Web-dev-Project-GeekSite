@@ -9,36 +9,111 @@
   /* Define uma cor para os links como uma variável */
   --color-link-hover: #e8e5e4;
   /* Define a cor dos links ao passar o mouse como uma variável */
+  --color-background: #2c2c2c;
+  --color-logo: #0084f3;
   --fonte-primaria: 'Krona One', sans-serif;
   --fonte-secundaria: 'Montserrat', sans-serif;
   --tamanho-da-fonte:  1.2rem;
   --tamanho-da-fonte-alt: 1rem;
   /*--color-background: rgb(187, 15, 187);*/
-  --color-background: var(--color-white);
-
   scroll-behavior: smooth;
   }  
+
   * {
-    background-color: var(--color-background);
-    box-sizing: border-box; /* Adiciona box-sizing para todos os elementos */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
   }
 
+
   body {
+    font-family: Arial;
+    min-height: 100dvh;
+    margin: 0;
     max-width: 1440px;
     margin: auto;
     font-size: var(--tamanho-da-fonte);
     font-family: var(--fonte-secundaria); /* Aplica a fonte secundária ao corpo */
     color: var(--color-black); /* Define a cor do texto padrão */
   }
-  header {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 48px;
-    font-family: var(--fonte-primaria); /* Aplica a fonte primária ao cabeçalho */
-    color: var(--color-black); /* Define a cor do texto do cabeçalho */
-
+.header--inner--content{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+  .navbar {
+    background-color: var(--color-background);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px var(--color-background);
+    z-index: 99;
   }
+
+  .navbar>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    color: var(--color-logo);
+  }
+  .logo>span{
+    color: var(--color-white);
+  }
+
+  nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+
+  .nav-icon-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-icon-container img{
+    width: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .nav-icon-container img:first-child{
+    margin-right: 1rem;
+  }
+
+  nav ul li{
+    margin-right: 1.2rem;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s;
+    font-weight: bold;
+  }
+
+  .menu--button{
+    display: none;
+  }
+
+  .header--bottom--side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+  }
+  .header--bottom--side--left{
+    display: flex;
+    align-items: center;
+  }
+
   .nav-container {
     display: flex;
     align-items: center; /* Alinha os itens verticalmente */
@@ -94,15 +169,6 @@
 }
 
 
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 10px 10px;
-  }
-
-
   .container-gallery {
     text-align: center;
     width: 100%;
@@ -121,71 +187,6 @@
 
 .featured-link {
     display: inline-block; /* Para garantir que a imagem seja um link clicável */
-}
-
-.featured-image {
-    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Cantos arredondados para a imagem */
-    transition: transform 0.3s; /* Efeito de transformação ao passar o mouse */
-}
-
-.featured-image:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
-
-  .container-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    gap: 10px;
-    height: 57vh;
-    overflow-y: auto;
-    padding: 20px 15px;
-  }
-
-.category {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.product {
-  font-size: var(--tamanho-da-fonte-alt); /* Aplica o tamanho da fonte definido */
-  font-family: var(--fonte-secundaria); /* Aplica a fonte secundária aos produtos */
-  background-color: var(--color-background); /* Fundo dos produtos */
-  border-radius: 10px;
-  padding: 10px;
-  
-  }
-
-  .product:hover {
-    transform: scale(1.1); 
-}
-
-.product img {
-  border: 2px solid #007bff; /* Borda azul */
-  border-radius: 4px; /* Cantos arredondados (opcional) */
-  max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
-  /*height: auto;  Mantém a proporção da imagem */
-}
-
-  .see-more {
-    display: block;
-    margin-top: 10px;
-    background: #333;
-    color: #fff;
-    padding: 5px;
-    text-decoration: none;
-    border-radius: 5px;
-    width: 100px;
-    text-align: center;
-}
-.see-more-container {
-
-    text-align: right;
-    margin: 10px 20px 20px 0;
 }
 
 .footer{
