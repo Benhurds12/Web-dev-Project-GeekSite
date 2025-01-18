@@ -6,9 +6,10 @@
     <title>BenGeek</title>
     <link rel="stylesheet" href="./css/reset-box.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar show-menu">
       <div class="header--inner--content">
         <h1 class="logo">Ben<span>Geek</span></h1>
         <nav>
@@ -22,7 +23,7 @@
         </nav>
         <div class="nav-icon-container">
           <img src="./assets/cart.png" alt="Carrinho de compras" />
-          <img src="./assets/menu.png" class="menu--button"/>
+          <img src="./assets/menu.png" class="menu-button"/>
         </div>
       </div>
     </div>
@@ -46,5 +47,15 @@
         </div>
       </div>
     </header>
+    
+    <script>
+      
+      const navbar = document.querySelector(".navbar");
+      const menuButton = document.querySelector(".menu-button");
+
+      menuButton.addEventListener('click', () => {
+        navbar.classList.toggle("show-menu");
+      });
+    </script>
   </body>
 </html>

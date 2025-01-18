@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --color-black: #000;
@@ -7,230 +7,178 @@
   /* Define a cor branca como uma variável */
   --color-link: #7f7f7f;
   /* Define uma cor para os links como uma variável */
-  --color-link-hover: #e8e5e4;
+  --color-link-hover: #004c94;
   /* Define a cor dos links ao passar o mouse como uma variável */
   --color-background: #2c2c2c;
   --color-logo: #0084f3;
-  --fonte-primaria: 'Krona One', sans-serif;
-  --fonte-secundaria: 'Montserrat', sans-serif;
-  --tamanho-da-fonte:  1.2rem;
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+  --tamanho-da-fonte: 1.5rem;
   --tamanho-da-fonte-alt: 1rem;
   /*--color-background: rgb(187, 15, 187);*/
   scroll-behavior: smooth;
-  }  
+}
 
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    min-width: 0;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
 
+body {
+  font-family: Arial;
+  font-size: var(--tamanho-da-fonte);
+  font-family: var(--fonte-secundaria); /* Aplica a fonte secundária ao corpo */
+  color: var(--color-black); /* Define a cor do texto padrão */
+}
 
-  body {
-    font-family: Arial;
-    min-height: 100dvh;
-    margin: 0;
-    max-width: 1440px;
-    margin: auto;
-    font-size: var(--tamanho-da-fonte);
-    font-family: var(--fonte-secundaria); /* Aplica a fonte secundária ao corpo */
-    color: var(--color-black); /* Define a cor do texto padrão */
-  }
-.header--inner--content{
-  max-width: 1200px;
+/* Header */
+.header-inner-content {
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
-  
-  .navbar {
-    background-color: var(--color-background);
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    box-shadow: 10px 0px 10px var(--color-background);
-    z-index: 99;
-  }
 
-  .navbar>div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo{
-    color: var(--color-logo);
-  }
-  .logo>span{
-    color: var(--color-white);
-  }
-
-  nav ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-
-
-  .nav-icon-container{
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-icon-container img{
-    width: 24px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-
-  .nav-icon-container img:first-child{
-    margin-right: 1rem;
-  }
-
-  nav ul li{
-    margin-right: 1.2rem;
-    color: var(--color-white);
-    cursor: pointer;
-  }
-
-  nav ul li:hover{
-    transform: translateY(-5px);
-    transition: all 0.3s;
-    font-weight: bold;
-  }
-
-  .menu--button{
-    display: none;
-  }
-
-  .header--bottom--side{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    padding: 1rem;
-  }
-  .header--bottom--side--left{
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-container {
-    display: flex;
-    align-items: center; /* Alinha os itens verticalmente */
+.navbar {
+  background-color: var(--color-background);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 0px 10px var(--color-background);
+  z-index: 99;
 }
 
-.nav-logo {
-    display: flex;
-    align-items: center; /* Alinhamento vertical da logo e texto */
-    
-}
-
-.nav-logo img {
-    margin-right: 10px; /* Espaçamento entre a logo e o texto */
-}
-
-.nav-busca {
-    flex-grow: 1; /* Permite que a barra de busca ocupe espaço restante */
-    display: flex;
-    justify-content: space-between; /* Centraliza a barra de busca */
-    align-content: center;
-    margin: 100px;
- 
-}
-
-.busca__barra {
-  color: var(--color-black);
-    width: 85%; /* Largura da barra de busca */
-    padding: 8px 24px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda da barra */
-    border-radius: 2px; /* Cantos arredondados */
-    background-color: var(--color-white);
-}
-
-.nav-login {
-    margin-left: 20px; /* Espaçamento à esquerda do botão de login */
-    display: flex;
-    align-items: center; 
-}
-
-.nav-login button {
-    padding: 8px 16px; /* Espaçamento interno do botão */
-    border: none; /* Remove borda padrão */
-    border-radius: 4px; /* Cantos arredondados */
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    cursor: pointer; /* Cursor pointer para indicar clicável */
-    margin-right: 10px;
-    transition: background-color 0.3s;
-}
-
-.nav-login button:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse */
-}
-
-
-  .container-gallery {
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    min-height: 590px;
-    background-image: var(--background-general);
-    border-radius: 5px;
-    padding: 10px;
-    border: 2px;
-  }
-  
-  .featured-product {
-    text-align: center;
-    margin: 10px 0; /* Espaçamento vertical */
-}
-
-.featured-link {
-    display: inline-block; /* Para garantir que a imagem seja um link clicável */
-}
-
-.footer{
+.navbar > div {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 }
-.footer-logo{
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+
+.logo {
+  color: var(--color-logo);
+  font-size: var(--tamanho-da-fonte);
 }
-.footer-logo img{
-  margin-right: 10px;
-  width: 64px;
-  height: 64px;
+.logo > span {
+  color: var(--color-white);
 }
-.social{
-  margin-bottom: 10px;
-}
-.social ul{
+
+nav ul {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.social li{
-  margin-right: 12px;
-}
-.footer__links_logo{
-  display: flex;
   align-items: center;
-  text-decoration: none;
-}
-.footer__links_logo img {
-  width: 2rem; /* Largura desejada */
-  height: 2rem; /* Altura desejada */
-  margin: 0 10px; /* Espaçamento horizontal entre os ícones */
 }
 
-@media (max-width: 768px) {
-  .nav-busca {
-    flex-direction: column; /* Alinha verticalmente em telas pequenas */
-    align-items: stretch; /* Estica a barra de busca */
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon-container img {
+  width: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav-icon-container img:first-child {
+  margin-right: 1rem;
+}
+
+nav ul li {
+  margin-right: 1.2rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.menu-button {
+  display: none;
+}
+
+header {
+  background-image: radial-gradient(#fff, #c7c7c7);
+}
+.header--bottom--side {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 1rem;
+}
+.header--bottom--side--left {
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.header--bottom--side--left h2 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+.header--bottom--side--left p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.header--bottom--side--left button {
+  background-color: var(--color-link);
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 3.8rem;
+  border-radius: 9999px;
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.header--bottom--side--left button:hover {
+  background-color: var(--color-link-hover);
+}
+
+.header--bottom--side--right {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header--bottom--side--right img {
+  width: 115%;
+}
+
+@media screen and(max-width: 800px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+  .header--bottom--side--left h2 {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  nav {
+    position: absolute;
+    background-color: var(--color-background);
+    width: 100%;
+    top: 48px;
+    display: none;
+  }
+  .show-menu nav {
+    display: block;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding: 1rem;
+    text-align: center;
   }
 
   .busca__barra {
